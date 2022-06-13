@@ -28,7 +28,7 @@ raw = mne.io.read_raw(fname)
 
 # == GET CONFIG VALUES ==
 start = config['start']
-stop = config['stop']
+stop = config['stop'] ## NONE!!!!!!
 duration = config['duration']
 n_grad = config['n_grad']
 n_mag = config['n_mag']
