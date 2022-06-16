@@ -42,8 +42,7 @@ er_proj.save(os.path.join('out_dir','proj.fif'))
 
 # == FIGURES ==
 plt.figure(1)
-fig_ep = mne.viz.plot_projs_topomap(er_proj, colorbar=True, vlim='joint',
-                           info=empty_room_raw.info)
+fig_ep = mne.viz.plot_projs_topomap(er_proj, colorbar=True, vlim='joint',info=raw.info)
 fig_ep.savefig(os.path.join('out_figs','emptyroom_projectors.png'))
 
 
