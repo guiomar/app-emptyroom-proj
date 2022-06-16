@@ -28,15 +28,15 @@ raw = mne.io.read_raw(fname)
 
 # == GET CONFIG VALUES ==
 start = config['start']
-stop = config['stop'] ## NONE!!!!!!
+stop  = config['stop']    if config['stop']   else None
 duration = config['duration']
 n_grad = config['n_grad']
-n_mag = config['n_mag']
-n_eeg = config['n_eeg']
-reject = config['reject']
-flat = config['flat']
-n_jobs = config['n_jobs']
-meg = config['meg']
+n_mag  = config['n_mag']
+n_eeg  = config['n_eeg']
+reject = config['reject'] if config['reject'] else None
+flat   = config['flat']   if config['flat']   else None
+n_jobs = config['n_jobs'] if config['n_jobs'] else None
+meg    = config['meg']
 verbose = None
 
 # == COMPUTE EMPTYROOOM PROJECTOR ==
