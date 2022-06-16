@@ -35,7 +35,7 @@ n_mag  = config['n_mag']
 n_eeg  = config['n_eeg']
 reject = config['reject'] if config['reject'] else None
 flat   = config['flat']   if config['flat']   else None
-n_jobs = config['n_jobs'] if config['n_jobs'] else None
+n_jobs = config['n_jobs'] #if config['n_jobs'] else None 
 meg    = config['meg']
 verbose = None
 
