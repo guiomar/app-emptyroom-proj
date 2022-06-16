@@ -37,8 +37,8 @@ n_mag = config['n_mag']
 er_proj = mne.compute_proj_raw(raw, start, stop, duration, n_grad, n_mag)
 
 # == SAVE FILE ==
-er_proj.save(os.path.join('out_dir','proj.fif'))
-
+#er_proj.save(os.path.join('out_dir','proj.fif'))
+mne.write_proj(os.path.join('out_dir','proj.fif'), er_proj)
 
 # == FIGURES ==
 plt.figure(1)
