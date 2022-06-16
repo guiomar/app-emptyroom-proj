@@ -8,7 +8,7 @@ Specially thought to identify emptyroom noise.
 
 ## Authors
 - Guiomar Niso (guiomar.niso@ctb.upm.es)
-- Saeed Zahran (saeed.zahran@utt.fr)
+- Saeed Zahran (saeedzahran@hotmail.com)
 
 ## Citations
 We kindly ask that you cite the following articles when publishing papers and code using this code. 
