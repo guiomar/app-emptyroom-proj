@@ -2,7 +2,7 @@
 #
 # This file is a MNE python-based brainlife.io App
 #
-# Author: Guiomar Niso
+# Authors: Guiomar Niso, Saeed Zahran
 # Indiana University
 
 # set up environment
