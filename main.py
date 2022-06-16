@@ -32,9 +32,15 @@ stop = config['stop'] ## NONE!!!!!!
 duration = config['duration']
 n_grad = config['n_grad']
 n_mag = config['n_mag']
+n_eeg = config['n_eeg']
+reject = config['reject']
+flat = config['flat']
+n_jobs = config['n_jobs']
+meg = config['meg']
+verbose = None
 
 # == COMPUTE EMPTYROOOM PROJECTOR ==
-er_proj = mne.compute_proj_raw(raw, start, stop, duration, n_grad, n_mag)
+er_proj = mne.compute_proj_raw(raw, start, stop, duration, n_grad, n_mag, n_eeg, reject, flat, n_jobs, meg, verbose)
 
 # == SAVE FILE ==
 #er_proj.save(os.path.join('out_dir','proj.fif'))
